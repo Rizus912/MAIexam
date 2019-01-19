@@ -1,0 +1,83 @@
+body {
+  background-color: #006D32;
+}
+#divList {
+  display: block;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  margin: 5px 5px;
+  padding: 10px 10px;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}
+#divTicket {
+  background-color: #FFFFFF;
+  border-radius: 30px;
+  margin: 5px 5px;
+  padding: 10px 10px;
+  display: none;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+}
+.backward {
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 45px;
+  margin: 10px 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 0px 0px rgba(0,0,0,.1);
+  transition: .3s;
+}
+.backward:hover {
+  background: #006D32;
+  box-shadow: 0 5px 10px rgba(0,109,50,.4);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.rounded {
+counter-reset: li;
+list-style: none;
+font: 14px "Trebuchet MS", "Lucida Sans";
+padding: 0;
+text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+.rounded a {
+position: relative;
+display: block;
+padding: .4em .4em .4em 2em;
+margin: .5em 0;
+background: #DAD2CA;
+color: #444;
+text-decoration: none;
+border-radius: .3em;
+transition: .3s ease-out;
+}
+.rounded a:hover {background: #E9E4E0;}
+.rounded a:hover:before {transform: rotate(360deg);}
+.rounded a:before {
+content: counter(li);
+counter-increment: li;
+position: absolute;
+left: -1.3em;
+top: 50%;
+margin-top: -1.3em;
+background: #8FD4C1;
+height: 2em;
+width: 2em;
+line-height: 2em;
+border: .3em solid white;
+text-align: center;
+font-weight: bold;
+border-radius: 2em;
+transition: all .3s ease-out;
+}
